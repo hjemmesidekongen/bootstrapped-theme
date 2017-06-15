@@ -17,7 +17,29 @@ let gulp = require('gulp'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
     livereload = require('gulp-livereload'),
+    runSequence = require('run-sequence');
     sourcemaps = require('gulp-sourcemaps');
+
+// Modernizr
+gulp.task('modernizr', ['styles', 'javascripts'], function() {
+    return gulp.src(['./dist/stylesheets/**/*.css', './dist/javascripts/**/*.js'])
+        .pipe(modernizr({
+            'cache': true,
+            'uglify': true,
+            'options': [
+                'setClasses',
+                'addTest',
+                'html5printshiv',
+                'testProp',
+                'fnBind'
+            ],
+            excludeTests: [
+                'hidden'
+            ]
+        }))
+        .pipe(gulp.dest('./dist/javascripts'))
+        .pipe(notify({ message: 'Modernizr task complete' }));
+});
 
 // CSS
 gulp.task('styles', function() {
@@ -37,8 +59,6 @@ gulp.task('javascripts', function() {
         .pipe(sourcemaps.init())
         .pipe(concat('app.js'))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('./dist/javascripts'))
-        .pipe(modernizr())
         .pipe(gulp.dest('./dist/javascripts'))
         .pipe(notify({ message: 'Javascripts task complete' }));
 });
@@ -86,13 +106,17 @@ gulp.task('watch', function() {
     gulp.watch([
         './src/styles/**/*.scss',
         './src/compile-settings.json'
-    ], ['styles']);
+    ], function() {
+        runSequence('styles', 'modernizr');
+    });
 
     // Watch javascript files
     gulp.watch([
         './src/javascripts/**/*.js',
         './src/compile-settings.json'
-    ], ['javascripts']);
+    ], function() {
+        runSequence('javascripts', 'modernizr');
+    });
 
     // Watch image files
     gulp.watch('./src/images/**/*', ['images']);
@@ -105,10 +129,14 @@ gulp.task('watch', function() {
         './dist/**/*',
         './**/*.html'
     ]).on('change', livereload.changed);
-
 });
 
 // Build task
 gulp.task('build', ['clean'], function() {
-    gulp.start('styles', 'javascripts', 'images', 'fonts');
+    runSequence('build-async', 'modernizr');
+});
+
+// Build async
+gulp.task('build-async', [], function() {
+    gulp.start('javascripts', 'styles', 'images', 'fonts');
 });

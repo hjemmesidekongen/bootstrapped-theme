@@ -2,13 +2,13 @@
   "private": true,
   "scripts": {},
   "dependencies": {
-    "additional-bootstrap-colors": "^1.0.4",
+    "additional-bootstrap-colors": "^1.0.5",
     "bootstrap": "^3.3.7",
-    "content-transitions": "^1.0.2",
+    "content-transitions": "^1.0.3",
     "del": "^2.2.2",
     "element-wrapper-link": "^1.0.0",
     "flexy-layout": "^1.0.0",
-    "flexy-list": "^1.0.0",
+    "flexy-list": "^1.0.1",
     "flexy-row": "^1.0.0",
     "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
@@ -23,9 +23,9 @@
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.6.0",
     "readable-bootstrap-breakpoints": "^1.0.1",
-    "sectioned": "^1.0.0",
+    "sectioned": "^1.0.1",
     "typography-breakpoints-justification": "^1.0.0",
-    "typography-helper": "^1.0.2"
+    "typography-helper": "^1.0.3"
   },
   "devDependencies": {}
 }

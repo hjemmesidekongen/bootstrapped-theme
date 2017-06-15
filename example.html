@@ -9,14 +9,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title></title>
 
-    <!-- Begin - external stylesheets -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,600,800" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600" rel="stylesheet">
-    <!-- End - external stylesheets -->
-
     <!-- Begin - internal stylesheets -->
     <link rel="stylesheet" href="dist/stylesheets/stylesheet.css">
     <!-- End - internal stylesheets -->
+
+    <!-- Begin - external webfonts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Roboto Slab:300,600,800',
+                    'Roboto:300,400,600'
+                ]
+            }
+        });
+    </script>
+    <!-- End - external webfonts -->
 
 </head>
 <body>
@@ -35,13 +45,13 @@
     <!-- End - sidr source provider -->
 
     <!-- Begin - header static -->
-    <header class="layout__header layout__header--static">
-        <div class="layout__header__row">
+    <header class="flexy-header flexy-header--static">
+        <div class="flexy-header__row">
             <div class="container">
                 <div class="flexy-row">
 
                     <!-- Begin - logo -->
-                    <a href="#" class="layout__header__logo">
+                    <a href="#" class="flexy-header__logo">
                         <img src="dist/images/logo.png" alt="Logo" />
                     </a>
                     <!-- End - logo -->
@@ -50,11 +60,11 @@
                     <div class="flexy-spacer"></div>
 
                     <!-- Begin - navigation -->
-                    <nav class="layout__header__navigation__wrapper"></nav>
+                    <nav class="flexy-header__navigation__wrapper"></nav>
                     <!-- End - navigation -->
 
                     <!-- Begin - responsive toggle -->
-                    <a href="#" class="layout__header__sidebar-toggle">
+                    <a href="#" class="flexy-header__sidebar-toggle">
                         <span class="icon fa fa-bars"></span>
                     </a>
                     <!-- End - responsive toggle -->
@@ -66,13 +76,13 @@
     <!-- End - header static -->
 
     <!-- Begin - header sticky -->
-    <header class="layout__header layout__header--sticky">
-        <div class="layout__header__row layout__header__row--second">
+    <header class="flexy-header flexy-header--sticky">
+        <div class="flexy-header__row flexy-header__row--second">
             <div class="container">
                 <div class="flexy-row">
 
                     <!-- Begin - logo -->
-                    <a href="#" class="layout__header__logo">
+                    <a href="#" class="flexy-header__logo">
                         <img src="dist/images/logo.png" alt="Logo" />
                     </a>
                     <!-- End - logo -->
@@ -81,11 +91,11 @@
                     <div class="flexy-spacer"></div>
 
                     <!-- Begin - navigation -->
-                    <nav class="layout__header__navigation__wrapper"></nav>
+                    <nav class="flexy-header__navigation__wrapper"></nav>
                     <!-- End - navigation -->
 
                     <!-- Begin - responsive toggle -->
-                    <a href="#" class="layout__header__sidebar-toggle">
+                    <a href="#" class="flexy-header__sidebar-toggle">
                         <span class="icon fa fa-bars"></span>
                     </a>
                     <!-- End - responsive toggle -->
@@ -116,7 +126,7 @@
 <!-- End - wrapper -->
 
 <!-- Begin - external javascripts -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- End - external javascripts -->
 
 <!-- Begin - internal javascripts -->

@@ -1,0 +1,16 @@
+{
+  "options": {
+    "proxy": "http://your-domain.dev"
+  },
+  "javascripts": [
+  	"node_modules/bootstrap-sass/assets/javascripts/bootstrap.js",
+    "src/javascripts/app.js"
+  ],
+  "styles": [
+  	"src/styles/stylesheet.less"
+  ],
+  "fonts": [
+    "node_modules/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.*",
+  	"node_modules/font-awesome/fonts/fontawesome-webfont.*"
+  ]
+}

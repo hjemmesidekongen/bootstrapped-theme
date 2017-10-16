@@ -6,10 +6,13 @@
     "bootstrap-sass": "^3.3.7",
     "content-transitions": "^1.0.3",
     "element-wrapper-link": "^1.0.0",
+    "flexy-header": "^1.0.0",
     "flexy-layout": "^1.0.0",
     "flexy-list": "^1.0.1",
+    "flexy-navigation": "^1.0.0",
     "flexy-row": "^1.0.0",
     "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
     "readable-bootstrap-breakpoints": "^1.0.1",
     "sectioned": "^1.0.5",
     "typography-breakpoints-justification": "^1.0.0",
@@ -23,8 +26,8 @@
     "gulp-cache": "^0.4.6",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^3.4.0",
-    "gulp-modernizr": "^1.0.0-alpha",
     "gulp-sass": "^3.1.0",
+    "gulp-modernizr": "^1.0.0-alpha",
     "gulp-sourcemaps": "^2.6.1",
     "run-sequence": "^2.2.0"
   }

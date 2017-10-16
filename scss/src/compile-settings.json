@@ -3,7 +3,10 @@
     "proxy": "http://your-domain.dev"
   },
   "javascripts": [
-  	"node_modules/bootstrap-sass/assets/javascripts/bootstrap.js",
+    "node_modules/jquery/dist/jquery.slim.js",
+    "node_modules/bootstrap-sass/assets/javascripts/bootstrap.js",
+    "node_modules/flexy-header/javascripts/flexy-header.js",
+    "node_modules/flexy-navigation/javascripts/flexy-navigation.js",
     "src/javascripts/app.js"
   ],
   "styles": [

@@ -3,14 +3,17 @@
     "proxy": "http://your-domain.dev"
   },
   "javascripts": [
-  	"node_modules/bootstrap-sass/assets/javascripts/bootstrap.js",
+    "node_modules/jquery/dist/jquery.slim.js",
+    "node_modules/bootstrap/assets/javascripts/bootstrap.js",
+    "node_modules/flexy-header/javascripts/flexy-header.js",
+    "node_modules/flexy-navigation/javascripts/flexy-navigation.js",
     "src/javascripts/app.js"
   ],
   "styles": [
   	"src/styles/stylesheet.less"
   ],
   "fonts": [
-    "node_modules/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.*",
+    "node_modules/bootstrap/assets/fonts/bootstrap/glyphicons-halflings-regular.*",
   	"node_modules/font-awesome/fonts/fontawesome-webfont.*"
   ]
 }

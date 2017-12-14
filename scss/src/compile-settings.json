@@ -1,19 +1,22 @@
 {
   "options": {
-    "proxy": "http://your-domain.dev"
+    "proxy": "http://your-domain.test"
   },
   "javascripts": [
     "node_modules/jquery/dist/jquery.slim.js",
     "node_modules/bootstrap-sass/assets/javascripts/bootstrap.js",
     "node_modules/flexy-header/javascripts/flexy-header.js",
     "node_modules/flexy-navigation/javascripts/flexy-navigation.js",
+    "node_modules/sidr/dist/jquery.sidr.js",
+    "node_modules/jquery-slinky/dist/jquery.slinky.js",
+    "node_modules/pace-progress/pace.js",
     "src/javascripts/app.js"
   ],
   "styles": [
-  	"src/styles/stylesheet.scss"
+    "src/styles/stylesheet.scss"
   ],
   "fonts": [
-    "node_modules/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.*",
-  	"node_modules/font-awesome/fonts/fontawesome-webfont.*"
+    "src/styles/icomoon/fonts/icomoon.*",
+    "node_modules/bootstrap-sass/assets/fonts/bootstrap/glyphicons-halflings-regular.*"
   ]
 }
